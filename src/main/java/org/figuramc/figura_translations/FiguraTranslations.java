@@ -81,7 +81,7 @@ public class FiguraTranslations {
                         translations.put(entry.getKey(), entry.getValue().getAsString());
                     }
                 } catch (Exception e) {
-                    throw new RuntimeException("Failed to parse translation file at \"" + resourcePath + "\"");
+                    throw new RuntimeException("Failed to parse translation file at \"" + resourcePath + "\"", e);
                 }
             }
         }
